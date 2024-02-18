@@ -1,0 +1,85 @@
+:root {
+    --whole-bg: rgb(41, 44, 60);
+    --div-bg: rgb(24, 24, 37);
+    --btn-bg: rgb(30, 32, 48);
+    --font-colour: rgb(220, 224, 232);
+}
+
+body {
+    background: var(--whole-bg);
+    color: var(--font-colour);
+    margin: 0;
+    padding: 0;
+    font-family: 'Fredoka';
+}
+
+.theSun {
+    background-color: rgb(154, 154, 62);
+    width: 100px;
+    height: 100px;
+    /* clip-path: circle(50%); */
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgba(154, 154, 62, 0.8);
+    cursor: pointer;
+}
+
+.container {
+    /* background-color: red; */
+    width: 100%;
+    height: calc(100% - 30%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#child {
+    width: 50%;
+    height: 50%;
+    background-color: var(--div-bg);
+    margin-bottom: 20%;
+    padding: 7px 10px;
+    border-radius: 10px 20px 20px 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+#inputField {
+    background-color: var(--whole-bg);
+    color: var(--font-colour);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Fredoka';
+}
+
+button {
+    background-color: var(--btn-bg);
+    color: var(--font-colour);
+    border: none;
+    border-radius: 7px;
+    padding: 10px 20px;
+    margin: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Fredoka';
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+button:hover {
+    background-color: rgb(230, 233, 239);
+    background-color: var(--whole-bg);
+    color: var(--div-bg);
+    box-shadow: none;
+}
+
+button:active {
+    color: var(--font-colour);
+}
+
+#convertedData {
+    color: var(--font-colour);
+    font-size: large;
+    margin-left: 45%;
+    margin-top: 10px;
+}
